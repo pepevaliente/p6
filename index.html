@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary:#F8F8F8;
+            --color-secundary:#98A98D;
+            --color-bg:#C0D4B3;
+            --color-black:#000000;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border: solid 0.05em var(--color-secundary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:first-child img{
+            object-position: top;
+        }
+        .card:nth-child(2), .card:nth-child(3){
+            flex: 1 3 60%;
+            /* flex-grow
+            flex-basis: 60%; */
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            font-family: 'Inter';
+            display: flex;
+            flex-direction: column;
+            padding: 2em 0 0 0;
+            justify-content: first baseline;
+            height: 100%;
+        }
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0 0 0.5em 0;
+            flex-grow: 0;
+            color: var(--color-primary);
+            letter-spacing: 0.25em;
+            font-variant: small-caps;
+        }
+        .card_txt h2{
+            justify-content: flex-start;
+            font-weight: 700;
+            font-size: 1em;
+            color: var(--color-secundary);
+        }
+        .card_txt p{
+            padding:1em 0 0 0;
+            font-weight: 300;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/001.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble portrait bust of a man</h1>
+                    <h2>mid-1st century A.D.</h2>
+                    <p>This powerful portrait bust incorporates a large expanse of chest, a stylistic characteristic indicating that it was carved toward the middle of the first century A.D. Most surviving portraits worked in this hard realistic manner date to the first century B.C., but the style continued in fashion until the mid-first century A.D. and was revived intermittently thereafter.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/002.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble portrait of the emperor caracalla</h1>
+                    <h2>212–217 A.D.</h2>
+                    <p>Caracalla took the official name of M. Aurelius Antoninus Pius as part of the Severan dynasty’s attempt to appear as the legitimate and worthy successors of the secondcentury Antonine emperors. Despite this, in his official portraiture, he abandoned the luxuriant hair and beard of his predecessors for a military style characterized by closely cropped curls and a stubble beard.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/003.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble portrait bust of the emperor gaius, known as caligula</h1>
+                    <h2>37–41 A.D.</h2>
+                    <p>The portrait style created for Augustus was adopted by his family and immediate successors in order to stress the unity and continuity of the Julio-Claudian dynasty. This fine bust of Caligula (r. A.D. 37– 41) has regular features and carefully designed locks of hair similar to those in portraits of Augustus. Here, however.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/004.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble head of a greek general</h1>
+                    <h2>1st–2nd century A.D.</h2>
+                    <p>Copy of a Greek bronze statue of the middle of the 4th century B.C.
+                        This powerful portrayal of a man of action belongs to a type popular in Roman times. One suggestion for his identity is the strategos (general) Phokion, pupil of Plato and one of the foremost Athenian statesmen of the fourth century B.C., but there is little evidence to support that theory. We do not know if the original statue was a contemporary portrait.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/005.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble portrait of the emperor augustus</h1>
+                    <h2>14-37 A.D.</h2>
+                    <p>This over life-size fragment may have been part of a seated statue of the emperor made during the reign of his step-son and successor, Tiberius. Over two hundred and fifty portraits of Augustus, including numerous full-length statues, are known today. In antiquity, there were probably as many bronze statues of the emperor as there were marble ones.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/006.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>marble portrait head of the emperor constantine I</h1>
+                    <h2>325–370 A.D.</h2>
+                    <p>Constantine the Great was the first Christian emperor of Rome, and his reign had a profound effect on the subsequent development of the Roman, later Byzantine, world. By 325 he had succeeded in reunifying the empire, having defeated the last of his former tetrarchic colleagues, the eastern emperor Licinius. He thereafter aimed to establish a new dynasty and to found a new capital.</p>
+                </header>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
